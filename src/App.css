@@ -1,38 +1,314 @@
-.App {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 70px; /* important */
+}
+.ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  cursor: pointer;
+  list-style: none;
+}
+.txt {
+  text-align: center;
+  margin-top: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #777575;
+  font-size: 14px;
+}
+
+/* hero section */
+
+.bg {
+  background-color: #f7f7f7;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.hero-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.hero-title h1 {
+  font-size: 70px;
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+.hero-right {
+  max-width: 420px;
+}
+
+.hero-right-content {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-right-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-right-links a {
+  font-size: 14px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.hero-right-links a:hover {
+  text-decoration: underline;
+}
+
+/* carausole  */
+
+.store-shelf {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.shelf-scroll {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.shelf-list {
+  display: flex;
+  gap: 24px;
+}
+
+.product-card {
+  min-width: 160px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-image img {
+  width: 140px;
+}
+.product-image img:hover {
+  transform: scale(1.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.product-title a {
+  font-size: 14px;
+  color: #1d1d1f;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-title a:hover {
+  text-decoration: underline;
+}
+
+.carousel-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #d2d2d7;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.carousel-btn:hover {
+  background: #f5f5f7;
+}
+
+/* section card 2 */
+
+.latest-section {
+  padding: 40px 60px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.latest-header h2 {
+  font-size: 28px;
+  margin-bottom: 4px;
+  margin-left: 6rem;
+}
+
+.latest-header h2 span {
+  color: #7f7f81;
+  font-weight: 500;
+}
+
+.carousel {
+  position: relative;
+  margin-top: 24px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+
+/* Cards */
+.card {
+  min-width: 220px;
+  background: #f5f5f7;
+  border-radius: 18px;
+  padding: 16px;
+  /* box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.5); */
+}
+
+.card img {
+  width: 20px;
+  border-radius: 12px;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  margin: 12px 0 4px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #6e6e73;
+}
+
+.card span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+ 
+
+
+/* apple-car5 */
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 1rem;
+}
+
+.card1 {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+  max-width: 17rem;
+  height: 13rem;
+}
+
+.card-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon-wrapper {
+  background-color: #dbeafe;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #2563eb;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+
+/* apple-car8 */
+.apple-car8-container {
+  position: relative;
+  width: 380px;
+  height: 420px;
+  margin-left: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #f5f5f7;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.apple-car8-content{
+    position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+  color: #000;
+}
+
+.apple-car8-content span{
+   font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.apple-car8-content h1{
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.apple-car8-content p{
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.apple-car8-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* LinksTabs */
+
+.links-tabs{
+  display: flex;
+  gap: 10px;
+  margin-left: 30px;
+}
+.links-tabs span {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.links-tabs span:hover{
+  background-color: #000;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+/* AppleCar3 section */
+
